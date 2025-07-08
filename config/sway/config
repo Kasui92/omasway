@@ -1,1 +1,4 @@
 include ~/.local/share/omasway/default/sway/config
+include ~/.local/share/omasway/default/sway/waybar
+
+include /etc/sway/config.d/*
