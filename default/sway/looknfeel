@@ -2,8 +2,6 @@
 font pango:CaskaydiaMono NF 10
 
 # Windows borders
-smart_borders on
-smart_gaps on
 gaps inner 5
 gaps outer 10
 default_border pixel 2
