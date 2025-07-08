@@ -14,6 +14,10 @@ zd() {
     z "$@" && printf " \U000F17A9 " && pwd || echo "Error: Directory not found"
   fi
 }
+md() {
+    mkdir -p $1
+    cd $1
+}
 
 # Directories
 alias ..='cd ..'
