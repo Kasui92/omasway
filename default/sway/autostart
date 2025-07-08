@@ -1,5 +1,5 @@
 # Startup Applications
-xwayland force
+xwayland enable
 
 # autotiling
 exec --no-startup-id autotiling
