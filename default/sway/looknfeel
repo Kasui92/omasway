@@ -6,17 +6,3 @@ gaps inner 5
 gaps outer 19
 default_border pixel 2
 default_floating_border pixel 2
-
-# Blur, rounded corners, and shadows
-blur enable
-blur_passes 1
-blur_radius 3
-
-corner_radius 0
-
-shadows enable
-shadow_offset 5 5
-shadow_color #1a1a1aee
-
-default_dim_inactive 0.1
-for_window [app_id=".*"] opacity 0.9
