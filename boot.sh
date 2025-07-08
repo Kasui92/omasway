@@ -23,8 +23,8 @@ done
 # Reset colors
 echo -e "$reset"
 
-sudo apt update >/dev/null
-sudo apt install -y git >/dev/null
+sudo apt-get update >/dev/null
+sudo apt-get install -y git >/dev/null
 
 echo -e "\nCloning Omasway..."
 rm -rf ~/.local/share/omasway
