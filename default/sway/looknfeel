@@ -1,8 +1,9 @@
 # Fonts
-font CaskaydiaMono Nerd Font 10
+font pango:CaskaydiaMono NF 10
 
-# Gaps and Borders
+# Windows borders
+smart_borders on
+smart_gaps on
 gaps inner 5
-gaps outer 19
+gaps outer 10
 default_border pixel 2
-default_floating_border pixel 2
