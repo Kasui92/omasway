@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source $OMASWAY_PATH/bin/omasway-sub/header.sh
+source $OMASWAY_PATH_PATH/bin/omasway-sub/helper.sh
+source $OMASWAY_PATH/bin/omasway-sub/menu.sh
+

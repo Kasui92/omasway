@@ -1,0 +1,5 @@
+source ~/.local/share/omasway/default/bash/shell
+source ~/.local/share/omasway/default/bash/aliases
+source ~/.local/share/omasway/default/bash/functions
+source ~/.local/share/omasway/default/bash/prompt
+source ~/.local/share/omasway/default/bash/init
