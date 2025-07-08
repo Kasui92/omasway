@@ -1,0 +1,5 @@
+# Startup Applications
+xwayland force
+
+# autotiling
+exec --no-startup-id autotiling

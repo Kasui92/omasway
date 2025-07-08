@@ -17,7 +17,7 @@
       "battery",
       "custom/power-menu"
     ],
-    "hyprland/workspaces": {
+    "sway/workspaces": {
       "on-click": "activate",
       "format": "{icon}",
       "format-icons": {
