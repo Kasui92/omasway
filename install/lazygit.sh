@@ -4,6 +4,5 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/downl
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit -D -t /usr/local/bin/
 rm lazygit.tar.gz lazygit
-mkdir -p ~/.config/lazygit/
-cp ~/.local/share/omakub/configs/lazygit/config.yml ~/.config/lazygit/config.yml
 cd -
+
