@@ -1,4 +1,5 @@
 # Copy over Omasway configs
+mkdir -p ~/.config
 cp -R ~/.local/share/omasway/config/* ~/.config/
 
 # Ensure application directory exists for update-desktop-database
@@ -47,4 +48,3 @@ include "%H/.local/share/omasway/default/xcompose"
 <Multi_key> <space> <n> : "$OMASWAY_USER_NAME"
 <Multi_key> <space> <e> : "$OMASWAY_USER_EMAIL"
 EOF
-
