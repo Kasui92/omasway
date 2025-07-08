@@ -3,4 +3,4 @@ source ~/.local/share/omasway/default/bash/aliases
 source ~/.local/share/omasway/default/bash/functions
 source ~/.local/share/omasway/default/bash/prompt
 source ~/.local/share/omasway/default/bash/init
-source ~/.local/share/omarchy/default/bash/envs
+source ~/.local/share/omasway/default/bash/envs
