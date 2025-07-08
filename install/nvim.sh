@@ -1,10 +1,11 @@
 if ! command -v nvim &>/dev/null; then
   cd /tmp
-  NVIM_VERSION=$(curl -s "https://api.github.com/repos/neovim/neovim/releases/latest" | grep -Po '"tag_name":\s*"v?\K[0-9.]+')
-  curl -Lo nvim.tar.gz "https://github.com/neovim/neovim/releases/download/v${VERSION}/nvim-linux-x86_64.tar.gz"
-  sudo rm -rf /opt/nvim
-  sudo tar -xzf nvim.tar.gz --directory /opt
-  rm -f nvim.tar.gz
+  wget -O nvim.tar.gz "https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz"
+  tar -xf nvim.tar.gz
+  sudo install nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
+  sudo cp -R nvim-linux-x86_64/lib /usr/local/
+  sudo cp -R nvim-linux-x86_64/share /usr/local/
+  rm -rf nvim-linux-x86_64 nvim.tar.gz
   cd -
 
   # Install luarocks and tree-sitter-cli to resolve lazyvim :checkhealth warnings
