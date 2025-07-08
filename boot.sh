@@ -14,6 +14,7 @@ color='\033[38;2;27;74;73m'
 reset='\033[0m'
 
 # Apply colors
+echo
 IFS=$'\n' read -rd '' -a lines <<<"$ascii_art"
 for line in "${lines[@]}"; do
   echo -e "${color}${line}"
