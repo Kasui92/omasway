@@ -9,7 +9,7 @@ This project is designed for minimal Ubuntu installations ([Ubuntu Server 24.04]
 To install Omasway, simply run the following command in your terminal:
 
 ```bash
-curl -sSL https://omakase.lucapattocchio.dev/omasway | bash
+curl -sSL https://omakasui.lucapattocchio.dev/omasway | bash
 ```
 
 ## License
