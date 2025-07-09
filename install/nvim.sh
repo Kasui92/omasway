@@ -12,7 +12,7 @@ if ! command -v nvim &>/dev/null; then
   sudo apt install -y luarocks tree-sitter-cli
 
   # Use LazyVim
-  rm -rf ~/.config/nvim/.git
+  rm -rf ~/.config/nvim
   git clone https://github.com/LazyVim/starter ~/.config/nvim
   cp -R ~/.local/share/omasway/config/nvim/* ~/.config/nvim/
   rm -rf ~/.config/nvim/.git
