@@ -14,4 +14,4 @@ curl -sSL https://omakase.lucapattocchio.dev/omasway | bash
 
 ## License
 
-Omarell is released under the [MIT License](https://opensource.org/licenses/MIT).
+Omasway is released under the [MIT License](https://opensource.org/licenses/MIT).
