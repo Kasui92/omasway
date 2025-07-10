@@ -1,6 +1,6 @@
 
 # background
-exec swaybg -i ~/.config/omasway/current/background -m fill
+exec_always swaybg -i ~/.config/omasway/current/background -m fill
 
 # autotiling
 exec --no-startup-id autotiling

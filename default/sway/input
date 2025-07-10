@@ -1,0 +1,9 @@
+input type:keyboard {
+    xkb_layout us
+}
+
+input type:touchpad {
+    dwt enabled
+    tap enabled
+    natural_scroll disabled
+}

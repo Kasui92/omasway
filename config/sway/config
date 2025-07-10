@@ -1,8 +1,11 @@
 # Use defaults Omasway defaults
-include ~/.local/share/omasway/default/sway/looknfeel
-include ~/.local/share/omasway/default/sway/config
+include ~/.local/share/omasway/default/sway/variables
+include ~/.local/share/omasway/default/sway/input
 include ~/.local/share/omasway/default/sway/autostart
-include ~/.local/share/omasway/default/sway/waybar
+
+include ~/.local/share/omasway/default/sway/bindings
+
+include ~/.local/share/omasway/default/sway/looknfeel
 include ~/.config/omasway/current/theme/sway.conf
 
 include /etc/sway/config.d/*

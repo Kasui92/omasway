@@ -5,3 +5,8 @@ font pango:CaskaydiaMono NF 10
 gaps inner 5
 gaps outer 10
 default_border pixel 2
+
+# Bar
+bar {
+  swaybar_command waybar
+}
