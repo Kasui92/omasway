@@ -9,6 +9,9 @@ for f in ~/.local/share/omasway/themes/*; do ln -s "$f" ~/.config/omasway/themes
 # Set initial theme
 mkdir -p ~/.config/omasway/current
 ln -snf ~/.config/omasway/themes/$OMASWAY_FIRST_RUN_THEME ~/.config/omasway/current/theme
+source ~/.local/share/omasway/themes/$OMASWAY_FIRST_RUN_THEME/backgrounds.sh
+ln -snf ~/.config/omasway/backgrounds/$OMASWAY_FIRST_RUN_THEME ~/.config/omasway/current/backgrounds
+ln -snf $(find "$HOME/.config/omasway/current/backgrounds/" -type f | head -n 1) "$HOME/.config/omasway/current/background"
 
 # Set specific app links for current theme
 ln -snf ~/.config/omasway/current/theme/wofi.css ~/.config/wofi/style.css
