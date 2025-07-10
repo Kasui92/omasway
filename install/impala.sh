@@ -4,7 +4,7 @@ if command -v cargo &> /dev/null && ! command -v impala &> /dev/null; then
   cd impala
   cargo build --release --locked
   sudo mv target/release/impala /usr/local/bin/
-  cd /tmp
+  cd ..
   rm -rf impala
   cd -
 fi
