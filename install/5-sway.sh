@@ -1,7 +1,4 @@
 # Sway - A Wayland compositor
 sudo apt install -y \
   sway swaybg swaylock \
-  waybar wofi mako
-
-# Start Sway on first session - Ubuntu compatible approach
-echo "[[ -z \$DISPLAY && \$(tty) == /dev/tty1 ]] && exec sway" >> ~/.profile
+  waybar wofi mako iwd

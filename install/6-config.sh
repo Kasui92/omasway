@@ -16,6 +16,13 @@ source ~/.local/share/omasway/default/bash/shell
 [ -f "~/.inputrc" ] && mv ~/.inputrc ~/.inputrc.bak
 echo "\$include ~/.local/share/omasway/default/bash/inputrc" >~/.inputrc
 
+# Configure the profile using Omakub defaults
+[ -f "~/.profile" ] && mv ~/.profile ~/.profile.bak
+echo "\$include ~/.local/share/omasway/default/bash/profile" >~/.profile
+
+# Start Sway on first session - Ubuntu compatible approach
+echo "[[ -z \$DISPLAY && \$(tty) == /dev/tty1 ]] && exec sway" >> ~/.profile
+
 # Login directly as user
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
 sudo tee /etc/systemd/system/getty@tty1.service.d/override.conf >/dev/null <<EOF
