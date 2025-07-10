@@ -16,7 +16,7 @@ source ~/.local/share/omasway/default/bash/shell
 [ -f "~/.inputrc" ] && mv ~/.inputrc ~/.inputrc.bak
 echo "\$include ~/.local/share/omasway/default/bash/inputrc" >~/.inputrc
 
-# Login directly as user, rely on disk encryption + hyprlock for security
+# Login directly as user
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
 sudo tee /etc/systemd/system/getty@tty1.service.d/override.conf >/dev/null <<EOF
 [Service]
