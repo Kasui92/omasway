@@ -4,5 +4,5 @@ sudo apt install -y \
   waybar wofi \
   network-manager
 
-# Start Sway on first session
-echo "[[ -z \$DISPLAY && \$(tty) == /dev/tty1 ]] && exec sway" >~/.bash_profile
+# Start Sway on first session - Ubuntu compatible approach
+echo "[[ -z \$DISPLAY && \$(tty) == /dev/tty1 ]] && exec sway" >> ~/.profile
