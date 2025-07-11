@@ -4,3 +4,6 @@ sudo apt install -y \
   waybar wofi mako-notifier iwd \
   xwayland wayland-protocols wayland-utils xdg-desktop-portal-wlr xdg-desktop-portal-gtk \
   qtwayland5 qt6-wayland
+
+# Enable iwd for Wi-Fi management
+sudo systemctl enable iwd
