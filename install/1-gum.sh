@@ -1,4 +1,4 @@
-# Gum is used for the Omakub commands for tailoring Omakub after the initial install
+# Gum is used for the Omasway commands for tailoring Omasway after the initial install
 if ! command -v gum &> /dev/null; then
   cd /tmp
   GUM_VERSION="0.14.3" # Use known good version
