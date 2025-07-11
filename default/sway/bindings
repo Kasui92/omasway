@@ -7,7 +7,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+w kill
 
 # Start your launcher
-bindsym $mod+space exec pkill wofi || wofi --show drun --sort-order=alphabetical
+bindsym $mod+space exec pkill wofi || wofi --show drun --sort-order=alphabetical --style="$HOME/.local/share/omasway/default/wofi/search.css"
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
