@@ -16,14 +16,8 @@ source ~/.local/share/omasway/default/bash/shell
 [ -f "~/.inputrc" ] && mv ~/.inputrc ~/.inputrc.bak
 echo "\$include ~/.local/share/omasway/default/bash/inputrc" >~/.inputrc
 
-# Configure the profile using Omasway defaults
-[ -f "~/.profile" ] && mv ~/.profile ~/.profile.bak
-echo "source ~/.local/share/omasway/default/bash/profile" >~/.profile
-
 # Start Sway on first session - Ubuntu compatible approach
-echo 'if [ "$(tty)" = "/dev/tty1" ]; then
-  exec sway
-fi' >> ~/.profile
+echo '[ "$(tty)" = "/dev/tty1" ] && exec sway' >> ~/.bash_profile
 
 # Login directly as user
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
