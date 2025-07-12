@@ -18,7 +18,7 @@ echo "\$include ~/.local/share/omasway/default/bash/inputrc" >~/.inputrc
 
 # Configure the profile using Omasway defaults
 [ -f "~/.profile" ] && mv ~/.profile ~/.profile.bak
-echo "\$include ~/.local/share/omasway/default/bash/profile" >~/.profile
+echo "source ~/.local/share/omasway/default/bash/profile" >~/.profile
 
 # Start Sway on first session - Ubuntu compatible approach
 echo 'if [ "$(tty)" = "/dev/tty1" ]; then
