@@ -1,6 +1,6 @@
 # Omasway
 
-**Warning: This project is under active development and is not stable. Use at your own risk.**
+> ⚠️ **Warning: This project is under active development and is not stable. Use at your own risk.**
 
 This project is designed for minimal Ubuntu installations ([Ubuntu Server 24.04](https://ubuntu.com/download/server) or [Ubuntu from CD](https://wiki.ubuntu-it.org/Installazione/CdMinimale)) to avoid the need to uninstall the entire Ubuntu desktop environment.
 
