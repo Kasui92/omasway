@@ -1,8 +1,12 @@
-# background
-exec_always swaybg -i ~/.config/omasway/current/background -m fill
+#
+exec {
+    $autotiling
+    $polkit_agent
+}
 
-# autotiling
-exec '[ -x "$(command -v autotiling)" ] && autotiling -w 1 3 5 7 9'
+exec_always {
+    $swaybg
+}
 
 #GTK issue
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

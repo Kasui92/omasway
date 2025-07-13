@@ -1,11 +1,15 @@
 # Use defaults Omasway defaults
 include ~/.local/share/omasway/default/sway/variables
-include ~/.local/share/omasway/default/sway/input
 include ~/.local/share/omasway/default/sway/autostart
 
-include ~/.local/share/omasway/default/sway/bindings
+include ~/.local/share/omasway/default/sway/input
+
+include ~/.local/share/omasway/default/sway/bindings/tiling
+include ~/.local/share/omasway/default/sway/bindings/utilities
+include ~/.local/share/omasway/default/sway/bindings/media
 
 include ~/.local/share/omasway/default/sway/looknfeel
 include ~/.config/omasway/current/theme/sway.conf
 
+# Include the default sway config
 include /etc/sway/config.d/*
