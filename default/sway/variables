@@ -1,5 +1,5 @@
 # Keyboard Layout
-set $keyboard_layout localectl status | awk '/X11 Layout/ {print $3}'
+set $keyboard_layout "localectl status | awk '/X11 Layout/ {print $3}'"
 
 # Mod keys
 set $mod Mod4
