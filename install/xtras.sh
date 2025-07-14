@@ -9,21 +9,16 @@ if [[ -v OMASWAY_FIRST_RUN_OPTIONAL_APPS ]]; then
   fi
 fi
 
-# Applications
-for script in ~/.local/share/omasway/applications/*.sh; do source $script; done
+# Apps
+# Copy and sync icon files
+mkdir -p ~/.local/share/icons/hicolor/48x48/apps/
+cp ~/.local/share/omasway/applications/icons/*.png ~/.local/share/icons/hicolor/48x48/apps/
+gtk-update-icon-cache ~/.local/share/icons/hicolor &>/dev/null
 
-# Remove Btop entry for one that runs in alacritty
-sudo rm -rf /usr/share/applications/btop.desktop
+# Copy .desktop declarations
+mkdir -p ~/.local/share/applications
+cp ~/.local/share/omasway/applications/*.desktop ~/.local/share/applications/
+cp ~/.local/share/omasway/applications/hidden/*.desktop ~/.local/share/applications/
 
-# App doesn't do anything when started from the app grid
-sudo rm -rf /usr/share/applications/org.flameshot.Flameshot.desktop
+update-desktop-database ~/.local/share/applications
 
-# Remove the ImageMagick icon
-sudo rm -rf /usr/share/applications/display-im6.q16.desktop
-
-# Replacing this with btop
-sudo rm -rf /usr/share/applications/org.gnome.SystemMonitor.desktop
-
-# We added our own meant for Alacritty
-sudo rm -rf /usr/local/share/applications/nvim.desktop
-sudo rm -rf /usr/local/share/applications/vim.desktop
