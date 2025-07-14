@@ -1,3 +1,6 @@
+# Keyboard Layout
+set $keyboard_layout localectl status | awk '/X11 Layout/ {print $3}'
+
 # Mod keys
 set $mod Mod4
 set $alt Mod1
@@ -24,10 +27,10 @@ set $menu wofi --show drun --sort-order=alphabetical --style="$HOME/.local/share
 
 # Browser
 set $browser firefox
-set $browser_pwa  --new-window --ozone-platform=wayland
+set $browser_pwa chromium  --new-window --ozone-platform=wayland
 
 # File Manager
-set $fileManager = nautilus --new-window
+set $fileManager nautilus --new-window
 
 # PolicyKit agent
 set $polkit_agent /usr/bin/mate-polkit

@@ -1,0 +1,2 @@
+# FLoating windows configuration for Sway
+for_window [app_id="pavucontrol"] floating enable
