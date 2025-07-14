@@ -27,7 +27,7 @@
       "5": "5",
       "6": "6",
       "default": "",
-      "active": "󱓻"
+      "focused": "󱓻"
     },
     "persistent-workspaces": {
       "1": [],
