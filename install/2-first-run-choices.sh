@@ -16,6 +16,7 @@ export OMASWAY_FIRST_RUN_THEME
 
 # Apps
 OPTIONAL_APPS=(
+  "Discord"
   "FlameShot"
   "Libreoffice"
   "LocalSend"
@@ -25,4 +26,4 @@ OPTIONAL_APPS=(
   "Visual Studio Code"
 )
 DEFAULT_OPTIONAL_APPS='FlameShot','LocalSend','Pinta','Spotify'
-export OMASWAY_FIRST_RUN_OPTIONAL_APPS=$(gum choose "${OPTIONAL_APPS[@]}" --no-limit --selected $DEFAULT_OPTIONAL_APPS --height 10 --header "Select optional apps" | tr ' ' '-')
+export OMASWAY_FIRST_RUN_OPTIONAL_APPS=$(gum choose "${OPTIONAL_APPS[@]}" --no-limit --selected $DEFAULT_OPTIONAL_APPS --height 14 --header "Select optional apps" | tr ' ' '-')

@@ -1,6 +1,7 @@
 CHOICES=(
   "Mainline Kernels    Install newer Linux kernels than Ubuntu defaults"
   "FlameShot           Screenshot tool with annotation"
+  "Discord             Communication platform for voice, video, and text messaging"
   "Libreoffice         Free and open source office suite"
   "LocalSend           Send files to nearby devices"
   "Pinta               Simple and easy to use drawing program"
