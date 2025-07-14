@@ -45,6 +45,10 @@ bindsym $mod+Shift+4 move container to workspace number 4
 bindsym $mod+Shift+5 move container to workspace number 5
 bindsym $mod+Shift+6 move container to workspace number 6
 
+# Moving through workspaces
+bindsym $mod+$alt+Right workspace next
+bindsym $mod+$alt+Left workspace prev
+
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen
 
