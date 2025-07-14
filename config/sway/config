@@ -10,17 +10,15 @@ include $HOME/.config/sway/variables.d/*.conf
 # Autostart applications
 include ~/.local/share/omasway/default/sway/autostart
 
-# Input/Output configuration
-include ~/.local/share/omasway/default/sway/input
+# Globals defaults
+include /etc/sway/config.d/*.conf
 
 # Omasway defaults
+include ~/.local/share/omasway/default/sway/input
 include ~/.local/share/omasway/default/sway/bindings/tiling
 include ~/.local/share/omasway/default/sway/bindings/utilities
 include ~/.local/share/omasway/default/sway/bindings/media
 include ~/.local/share/omasway/default/sway/looknfeel
-
-# Globals defaults
-include /etc/sway/config.d/*.conf
 
 # Users defaults
 include $HOME/.config/sway/config.d/*.conf
