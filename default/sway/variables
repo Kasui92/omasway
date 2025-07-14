@@ -1,6 +1,3 @@
-# Keyboard Layout
-set $keyboard_layout "localectl status | awk '/X11 Layout/ {print $3}'"
-
 # Mod keys
 set $mod Mod4
 set $alt Mod1
@@ -40,6 +37,3 @@ set $autotiling '[ -x "$(command -v autotiling)" ] && autotiling -w 1 3 5 7 9'
 
 # Swaybg command
 set $swaybg swaybg -i ~/.config/omasway/current/background -m fill
-
-# Include Sway configuration files
-include /etc/sway/config-vars.d/*

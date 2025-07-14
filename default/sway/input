@@ -1,9 +1,17 @@
+# Keyboard
 input type:keyboard {
-    xkb_layout $keyboard_layout
+    xkb_layout us
 }
 
+# Touchpad
 input type:touchpad {
     dwt enabled
     tap enabled
     natural_scroll disabled
 }
+
+# Gestures
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+bindgesture swipe:down floating toggle
+

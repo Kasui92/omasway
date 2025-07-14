@@ -1,15 +1,34 @@
-# Use defaults Omasway defaults
+# Globals variables
+include /etc/sway/config-vars.d/*
+
+# Omasway variables
 include ~/.local/share/omasway/default/sway/variables
+
+# User variables
+include $HOME/.config/sway/variables.d/*.conf
+
+# Autostart applications
 include ~/.local/share/omasway/default/sway/autostart
 
+# Input/Output configuration
 include ~/.local/share/omasway/default/sway/input
 
+# Omasway defaults
 include ~/.local/share/omasway/default/sway/bindings/tiling
 include ~/.local/share/omasway/default/sway/bindings/utilities
 include ~/.local/share/omasway/default/sway/bindings/media
-
 include ~/.local/share/omasway/default/sway/looknfeel
+
+# Globals defaults
+include /etc/sway/config.d/*.conf
+
+# Users defaults
+include $HOME/.config/sway/config.d/*.conf
+
+# Omasway theme
 include ~/.config/omasway/current/theme/sway.conf
 
-# Include the default sway config
-include /etc/sway/config.d/*
+# Keyboard Layout
+include ~/.config/sway/keyboard
+
+
