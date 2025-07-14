@@ -10,5 +10,3 @@ source /usr/share/bash-completion/bash_completion
 # Set complete path
 export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omasway/bin:$PATH"
 set +h
-
-export OMASWAY_PATH="/home/$USER/.local/share/omasway"

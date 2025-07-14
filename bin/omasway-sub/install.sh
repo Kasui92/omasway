@@ -7,31 +7,23 @@ CHOICES=(
   "Spotify             Stream music from the world's most popular service"
   "Visual Studio Code  Source code editor with support for development operations"
   "Xournalpp           Note taking and PDF annotation application"
-  "> All               Re-run any of the default installers"
   "<< Back             "
 )
 
-CHOICE=$(gum choose "${CHOICES[@]}" --height 23 --header "Install application")
+CHOICE=$(gum choose "${CHOICES[@]}" --height 14 --header "Install application")
 
 if [[ "$CHOICE" == "<< Back"* ]] || [[ -z "$CHOICE" ]]; then
   # Don't install anything
   echo ""
-elif [[ "$CHOICE" == "> All"* ]]; then
-  INSTALLER_FILE=$(gum file $OMASWAY_PATH/install)
-
-  [[ -n "$INSTALLER_FILE" ]] &&
-    gum confirm "Run installer?" &&
-    source $INSTALLER_FILE &&
-    gum spin --spinner globe --title "Install completed!" -- sleep 3
 else
   INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
   case "$INSTALLER" in
-  *) INSTALLER_FILE="$OMASWAY_PATH/install/optional/app-$INSTALLER.sh" ;;
+  *) INSTALLER_FILE="$HOME/.local/share/omasway/install/optional/app-$INSTALLER.sh" ;;
   esac
 
   source $INSTALLER_FILE && gum spin --spinner globe --title "Install completed!" -- sleep 3
 fi
 
 clear
-source $OMASWAY_PATH/bin/omasway
+source $HOME/.local/share/omasway/bin/omasway

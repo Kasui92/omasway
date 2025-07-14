@@ -14,13 +14,13 @@ else
   INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
   case "$INSTALLER" in
-  "omasway") INSTALLER_FILE="$OMASWAY_PATH/bin/omasway-sub/update/migrate.sh" ;;
-  "system") INSTALLER_FILE="$OMASWAY_PATH/bin/omasway-sub/update/update-system.sh" ;;
-  "firmware") INSTALLER_FILE="$OMASWAY_PATH/bin/omasway-sub/update/update-firmware.sh" ;;
+  "omasway") INSTALLER_FILE="$HOME/.local/share/omasway/bin/omasway-sub/update/migrate.sh" ;;
+  "system") INSTALLER_FILE="$HOME/.local/share/omasway/bin/omasway-sub/update/update-system.sh" ;;
+  "firmware") INSTALLER_FILE="$HOME/.local/share/omasway/bin/omasway-sub/update/update-firmware.sh" ;;
   esac
 
   source $INSTALLER_FILE && gum spin --spinner globe --title "Update completed!" -- sleep 3
 fi
 
 clear
-source $OMASWAY_PATH/bin/omasway
+source $HOME/.local/share/omasway/bin/omasway

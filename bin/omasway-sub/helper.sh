@@ -19,11 +19,11 @@ if timeout 3 curl -s --head "https://api.github.com/repos/Kasui92/omasway/releas
   last_release_tag=$(curl -s "https://api.github.com/repos/Kasui92/omasway/releases/latest" | grep -o '"tag_name": "[^"]*' | cut -d'"' -f4)
 
   # Check if the last release tag is not empty and if the version file exists
-  if [ -n "$last_release_tag" ] && [ -f "$OMASWAY_PATH/version" ]; then
+  if [ -n "$last_release_tag" ] && [ -f "$HOME/.local/share/omasway/version" ]; then
     last_release_number=${last_release_tag#v}
     last_release_number=${last_release_number//./}
 
-    local_version_tag=$(cat "$OMASWAY_PATH/version")
+    local_version_tag=$(cat "$HOME/.local/share/omasway/version")
     local_version_number=${local_version_tag#v}
     local_version_number=${local_version_number//./}
 
@@ -34,4 +34,3 @@ if timeout 3 curl -s --head "https://api.github.com/repos/Kasui92/omasway/releas
     fi
   fi
 fi
-

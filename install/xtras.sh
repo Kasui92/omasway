@@ -4,7 +4,7 @@ if [[ -v OMASWAY_FIRST_RUN_OPTIONAL_APPS ]]; then
 
   if [[ -n "$apps" ]]; then
     for app in $apps; do
-      source "$OMASWAY_PATH/install/optional/app-${app,,}.sh"
+      source "~/.local/share/omasway/install/optional/app-${app,,}.sh"
     done
   fi
 fi
@@ -21,4 +21,3 @@ cp ~/.local/share/omasway/applications/*.desktop ~/.local/share/applications/
 cp ~/.local/share/omasway/applications/hidden/*.desktop ~/.local/share/applications/
 
 update-desktop-database ~/.local/share/applications
-
