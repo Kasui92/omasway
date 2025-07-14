@@ -2,7 +2,7 @@
 Version=1.0
 Name=Omasway
 Comment=Omasway Controls
-Exec=alacritty --class=Omasway --title=Omasway -e bash -c '$HOME/.local/share/omarchy/bin/omasway'
+Exec=alacritty --class=Omasway --title=Omasway -e bash -c '$HOME/.local/share/omasway/bin/omasway'
 Terminal=false
 Type=Application
 Icon=Omasway
