@@ -80,3 +80,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+# Gestures
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+bindgesture swipe:down floating toggle
