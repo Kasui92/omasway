@@ -1,0 +1,11 @@
+[Unit]
+Description=Omasway Battery Monitor Timer
+Requires=omasway-battery-monitor.service
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=30sec
+AccuracySec=10sec
+
+[Install]
+WantedBy=timers.target
