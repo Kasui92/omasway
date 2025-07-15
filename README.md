@@ -1,4 +1,8 @@
-# Omasway
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kasui92/omasway/refs/heads/dev/applications/icons/Omasway.png" alt="Omasway Logo" height="200" widht="200"/>
+</p>
+
+<h1 align="center">Omasway</h1>
 
 > ⚠️ **Warning: This project is under active development and is not stable. Use at your own risk.**
 
