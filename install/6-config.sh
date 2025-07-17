@@ -27,6 +27,19 @@ ExecStart=
 ExecStart=-/sbin/agetty --autologin $USER --noclear %I \$TERM
 EOF
 
+# Configure Sway user input settings
+if [ ! -d "~/.config/sway/keyboard" ]; then
+  keyboard_layout=$(localectl status | grep "X11 Layout" | awk '{print $3}')
+  tee ~/.config/sway/keyboard >/dev/null <<EOF
+# Keyboard Layout
+input type:keyboard {
+    xkb_layout $keyboard_layout
+    repeat_delay 300
+    repeat_rate 40
+}
+EOF
+fi
+
 # Set common git aliases
 git config --global alias.co checkout
 git config --global alias.br branch

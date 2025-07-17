@@ -1,5 +1,3 @@
-
-* {
-  color: #d4be98;
-  background-color: #282828;
-}
+@define-color background rgba(40, 40, 40, 1);
+@define-color foreground rgba(212, 190, 152, 1);
+@define-color foreground-transparent rgba(212, 190, 152, 0.6);

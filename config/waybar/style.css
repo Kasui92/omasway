@@ -1,9 +1,16 @@
+@import "../omasway/current/theme/waybar.css";
+
 * {
   border: none;
   border-radius: 0;
   min-height: 0;
   font-family: CaskaydiaMono Nerd Font Propo;
   font-size: 12px;
+}
+
+window#waybar {
+  background-color: @background;
+  color: @foreground;
 }
 
 #workspaces {
@@ -14,6 +21,13 @@
   all: initial;
   padding: 2px 6px;
   margin-right: 3px;
+  color: @foreground;
+  background-color: transparent;
+}
+
+#workspaces button.persistent {
+  background-color: @background;
+  color: @foreground-transparent;
 }
 
 #custom-dropbox,
@@ -26,14 +40,18 @@
 #custom-power-menu {
   min-width: 12px;
   margin-right: 13px;
+  color: @foreground;
+  background-color: transparent;
 }
 
 tooltip {
+  color: @foreground;
+  background-color: @background;
   padding: 2px;
 }
 
 tooltip label {
+  color: @foreground;
+  background-color: transparent;
   padding: 2px;
 }
-
-@import "../omasway/current/theme/waybar.css";

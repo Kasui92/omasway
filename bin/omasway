@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source $OMASWAY_PATH/bin/omasway-sub/header.sh
-source $OMASWAY_PATH/bin/omasway-sub/helper.sh
-source $OMASWAY_PATH/bin/omasway-sub/menu.sh
+source $HOME/.local/share/omasway/bin/omasway-sub/header.sh
+source $HOME/.local/share/omasway/bin/omasway-sub/helper.sh
+source $HOME/.local/share/omasway/bin/omasway-sub/menu.sh

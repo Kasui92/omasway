@@ -1,5 +1,8 @@
 mkdir -p ~/.local/share/fonts
 
+# Fonts Awesome + Noto
+sudo apt install fonts-noto fonts-font-awesome -y
+
 # Cascadia Mono Nerd Font
 if ! fc-list | grep -qi "CaskaydiaMono Nerd Font"; then
   cd /tmp

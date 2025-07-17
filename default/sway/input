@@ -1,7 +1,9 @@
+# Keyboard
 input type:keyboard {
     xkb_layout us
 }
 
+# Touchpad
 input type:touchpad {
     dwt enabled
     tap enabled

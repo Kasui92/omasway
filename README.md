@@ -1,8 +1,12 @@
-# Omasway
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kasui92/omasway/refs/heads/dev/applications/icons/Omasway.png" alt="Omasway Logo" height="200" widht="200"/>
+</p>
+
+<h1 align="center">Omasway</h1>
 
 > ⚠️ **Warning: This project is under active development and is not stable. Use at your own risk.**
 
-This project is designed for minimal Ubuntu installations ([Ubuntu Server 24.04](https://ubuntu.com/download/server) or [Ubuntu from CD](https://wiki.ubuntu-it.org/Installazione/CdMinimale)) to avoid the need to uninstall the entire Ubuntu desktop environment.
+This project is designed for minimal Ubuntu installations ([Ubuntu Server 24.04](https://ubuntu.com/download/server) or [Ubuntu Minimal CD](https://help.ubuntu.com/community/Installation/MinimalCD#Status_of_the_Minimal_ISO_image)) to avoid the need to uninstall the entire Ubuntu desktop environment.
 
 ## Installation
 
